@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    /*justify-content (com o display: flex) mexe com o eixo principal (horizontal)*/
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+body{
+    background-color: rgba(31, 2, 58, 0.753);
+} 
+
+.addContato{
+    display: none;
+}
+
+.opcoes_padrao h1{
+    color: white;
+}
+
+#botoes{
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.menu_add{
+    margin: 8px 0;
+    display: flex;
+}
+
+#numeroCelular{
+    margin-left: 3px;
+}
+
+.botoes_add{
+    display: flex;
+}
+
+#btn_add{
+    background-color: rgb(8, 136, 25);
+}
+
+#btn_excluir{
+    background-color: rgba(185, 48, 112, 0.692);
+}
+
+table{
+    margin-top: 100px;
+}
+
+table img{
+    height: 60px;
+    border-radius: 12px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(133, 132, 132, 0.63);
+    border: none;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+}
+
+#botoes button{
+    padding: 12px;
+    border-radius: 12px;
+    margin-left: 4px;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    color: rgb(231, 231, 231);
+}
+
+#btn_add:hover, #botao_criar:hover{
+    background-color: rgb(8, 107, 21);
+    color: rgb(202, 202, 202);
+}
+
+/*o cancelar add n ficou lgl com essa cor*/
+#btn_excluir:hover, #cancelar_add:hover{
+    background-color: rgba(184, 12, 92, 0.692);
+    color: rgb(202, 202, 202);
+}
+
+#cancelar_add:hover{
+    background-color: rgba(184, 12, 92, 0.692);
+    color: rgb(202, 202, 202);
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.699);
+}
+
+option{
+    background-color: rgba(133, 132, 132, 0.63);
+    border-radius: 12px;
+}
+
+select{
+    padding: 8px;
+    border-radius: 12px;
+    background-color: rgba(133, 132, 132, 0.63);
+    color: white;
+}
+
+input:focus, select:focus{
+    outline: solid rgb(255, 86, 227) 1px;
+}
+
+.addContato button{
+    border-radius: 12px;
+    color: white;
+    padding: 7px;
+}
+
+#botao_criar{
+    background-color: rgb(8, 136, 25);
+    margin-right: 4px;
+}
+
+#cancelar_add{
+    background-color: rgba(255, 0, 119, 0.541);
+}
+
+.addContato h2{
+    font-size: 50px;
+    color: white;
+}
+
+table{
+    margin: 0 auto;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+}
+
+table thead th{
+    text-align: center;
+    padding: 16px 60px 0;
+    font-weight: 500;
+    border-bottom: 1.7px black solid;
+}
+
+table td{
+    border-bottom: 1.7px black solid;
+    padding: 16px 0;
+}
+
+#num_nospace,
+#num_semsoma,
+#num_invalido,
+#num_sempais {
+    background-color: rgb(199, 0, 0);
+    border-radius: 12px;
+    color: white;
+    display: none;
+    padding: 7px;
+    margin-left: 3px;
+}
+
+#nome_inval{
+    background-color: rgb(199, 0, 0);
+    border-radius: 12px;
+    color: white;
+    display: none;
+    padding: 7px;
+    margin-bottom: 5px;
+    max-width: 150px;
+}
